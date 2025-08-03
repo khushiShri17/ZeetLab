@@ -246,7 +246,6 @@ const ProblemPage = () => {
       language: selectedLang,
     };
 
-    console.log("ID from params:", problemId);
     try {
       const res = await API.post(
         `/execute/code/${problemId}/${ExecutionStatus.RUN}`,
@@ -259,7 +258,6 @@ const ProblemPage = () => {
           },
         }
       );
-      console.log("ulluuu", payload);
       
       if (res.data.success) {
         setResults(res.data.data);

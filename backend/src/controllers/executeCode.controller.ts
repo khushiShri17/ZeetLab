@@ -25,7 +25,6 @@ type refsolutions = {
 };
 
 const executeCode = asyncHandler(async (req, res) => {
-  console.log("Executing code with request body:", req.body);
   let {
     source_code,
     language,
