@@ -523,8 +523,8 @@ const ProblemPage = () => {
                     </div>
                   </div>
 
-                  {!selectedExample &&
-                    selectedExample.map((example, index) => (
+                  {selectedExample &&
+                    selectedExample.map((example:any, index:any) => (
                       <div className="mb-6" key={index + 1}>
                         <h3 className="text-gray-200 font-medium mb-2">
                           Example {index + 1}:
